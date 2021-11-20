@@ -6,6 +6,7 @@ const AddClock = () => {
     const [col, setCol] = useState(null);
     const [price, setPrice] = useState(null);
     const [typ, setTyp] = useState(null);
+    // process.env.URL_C
     const DoCancel = () => {
         setComp("");
         setMod("");
@@ -31,7 +32,7 @@ const AddClock = () => {
             <input type="text" value={typ} />
             <br></br>
             <button onClick={()=>{DoCancel}}  >Cancel</button>
-            <button  >Save</button>
+            <button  >update</button>
         </>
     )
 }
